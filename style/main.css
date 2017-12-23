@@ -28,6 +28,9 @@ body {
 }
 #box4 {
     background-color: gold;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 30px;
 }
 #box5 {
     background-color:  deeppink;
