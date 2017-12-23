@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9, #box10 {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+}
+#box1 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(11, 228, 11);
+    padding-top: 8%;
+    text-align: center;
+}
+#box2 {
+    background-color:  deeppink;
+}
+#box3 {
+    background-color: silver;
+}
+#box4 {
+    background-color: gold;
+}
+#box5 {
+    background-color:  deeppink;
+}
+#box6 {
+    background-color: silver;
+}
+#box7 {
+    background-color: gold;
+}
+#box8 {
+    background-color: rgb(255, 0, 0);
+}
+#box9 {
+    background-color: rgb(0, 60, 255);
+}
+#box10 {
+    background-color: rgb(255, 230, 0);
+}
+
+#menu {
+    position: fixed;
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+}
+
+a {
+    font-family: arial black;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-left: 70px;
+}
