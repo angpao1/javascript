@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="./style/sweetalert2.min.css">
     <script src="./js/alert.js"></script>
 
-    
+    <script src="./js/datedropper.min.js"></script>
+    <link rel="stylesheet" href="./style/datedropper.min.css">
     <title>Javascript</title>
 </head>
 
@@ -44,7 +45,16 @@
         <p>คลิกที่ปุ่ม Show เพื่อแสดง</p>
         <button onclick="sweet()">Show</button>
     </div>
-    <div id="box3">Box3</div>
+    <div id="box3">
+        <h1>เทคนิคที่ 3</h1>
+        <h2>แสดง วัน เดือน ปี</h2>
+        <label for="">กดเลือกวัน เดือน ปี</label>
+        <input type="text">
+
+        <script>
+            $('input').dateDropper();
+        </script>
+    </div>
     <div id="box4">Box4</div>
     <div id="box5">Box5</div>
     <div id="box6">Box6</div>
