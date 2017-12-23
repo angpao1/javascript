@@ -31,3 +31,35 @@ function wrt() {
         }
       })
 }
+
+function emi() {
+    swal({
+        title: 'กรอกอีเมล์ที่ต้องการส่ง',
+        input: 'email',
+        showCancelButton: true,
+        confirmButtonText: 'ส่ง',
+        cancelButtonText: 'ยกเลิก',
+        showLoaderOnConfirm: true,
+        preConfirm: (email) => {
+          return new Promise((resolve) => {
+            setTimeout(() => {
+              if (email === 'taken@example.com') {
+                swal.showValidationError(
+                  'This email is already taken.'
+                )
+              }
+              resolve()
+            }, 2000)
+          })
+        },
+        allowOutsideClick: false
+      }).then((result) => {
+        if (result.value) {
+          swal({
+            type: 'success',
+            title: 'ส่งข้อมูลสำเร็จ!',
+            html: 'ส่งข้อมูลไป: ' + result.value
+          })
+        }
+      })
+}
