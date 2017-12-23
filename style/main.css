@@ -16,6 +16,9 @@ body {
 }
 #box2 {
     background-color:  deeppink;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 30px;
 }
 #box3 {
     background-color: silver;
@@ -56,3 +59,4 @@ a {
     text-decoration: none;
     margin-left: 70px;
 }
+
