@@ -29,7 +29,7 @@ body {
     background-color:  rgb(20, 255, 204);
 }
 #box6 {
-    background-color: rgb(12, 253, 92);
+    /* background-color: rgb(12, 253, 92); */
 }
 #box7 {
     background-color: rgb(19, 72, 245);
@@ -59,3 +59,18 @@ a {
     margin-left: 70px;
 }
 
+#red {
+    background-color: red;
+}
+#blue {
+    background-color: blue;
+}
+#yellow {
+    background-color: yellow;
+}
+#green {
+    background-color: green;
+}
+#white {
+    background-color: white;
+}

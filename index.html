@@ -18,7 +18,7 @@
     <script src="./js/datedropper.min.js"></script>
     <link rel="stylesheet" href="./style/datedropper.min.css">
 
-    
+
     <title>Javascript</title>
 </head>
 
@@ -69,9 +69,69 @@
         <p>คลิกที่ปุ่ม View เพื่อกรอกอีเมล์</p>
         <button onclick="emi()">View</button>
     </div>
-    <div id="box6">Box6</div>
-    <div id="box7">Box7</div>
-    <div id="box8">Box8</div>
+    <div id="white">
+        <div id="box6">
+            <h1>เทคนิคที่ 6</h1>
+            <h2>เปลี่ยนสีพื้นหลัง</h2>
+            <p>คลิกที่ปุ่มเพื่อเปลี่ยนสี </p>
+            <button onclick="blue()">Blue</button>
+            <button onclick="red()">Red</button>
+            <button onclick="yellow()">Yellow</button>
+            <button onclick="green()">Green</button>
+        </div>
+        <script>
+            var div = document.getElementById("white");
+
+            function blue() {
+                div.setAttribute("id", "blue");
+            }
+            function red() {
+                div.setAttribute("id", "red");
+            }
+            function yellow() {
+                div.setAttribute("id", "yellow");
+            }
+            function green() {
+                div.setAttribute("id", "green");
+            }
+        </script>
+    </div>
+    <div id="box7">
+        <h1>เทคนิคที่ 7</h1>
+        <h2>แสดงเนื้อหาที่ซ่อนอยู่</h2>
+        <p>คลิกปุ่มเพื่อแสดงเนื้อหา</p>
+        <button onclick="toggleShow()">Click</button>
+        <p id="isShow"></p>
+
+        <script>
+            function toggleShow() {
+                document.getElementById("isShow").innerHTML = "Good Job!";
+            }
+        </script>
+    </div>
+    <div id="box8">
+        <h1 id="hsize">เทคนิคที่ 8</h1>
+        <h2 id="hhsize">เปลี่ยนขนาดตัวอักษร</h2>
+        <p id="psize">คลิกปุ่มเพื่อปรับขนาด</p>
+        <button onclick="clickAll()">Click</button>
+
+        <script>
+            function clickAll() {
+                hsize();
+                hhsize();
+                psize();
+            }
+            function hsize() {
+                document.getElementById("hsize").style.fontSize = "15%";
+            }
+            function hhsize() {
+                document.getElementById("hhsize").style.fontSize = "10%";
+            }
+            function psize() {
+                document.getElementById("psize").style.fontSize = "5%";
+            }
+        </script>
+    </div>
     <div id="box9">Box8</div>
     <div id="box10">Box8</div>
 
