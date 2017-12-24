@@ -18,7 +18,6 @@
     <script src="./js/datedropper.min.js"></script>
     <link rel="stylesheet" href="./style/datedropper.min.css">
 
-
     <title>Javascript</title>
 </head>
 
@@ -112,7 +111,7 @@
     <div id="box8">
         <h1 id="hsize">เทคนิคที่ 8</h1>
         <h2 id="hhsize">เปลี่ยนขนาดตัวอักษร</h2>
-        <p id="psize">คลิกปุ่มเพื่อปรับขนาด</p>
+        <p id="psize">คลิกปุ่มเพื่อเปลี่ยนขนาด</p>
         <button onclick="clickAll()">Click</button>
 
         <script>
@@ -132,10 +131,65 @@
             }
         </script>
     </div>
-    <div id="box9">Box8</div>
-    <div id="box10">Box8</div>
+    <div id="box9">
+        <h1>เทคนิคที่ 9</h1>
+        <h2>Animate Icons</h2>
+        <style>
+            #div1 {
+                font-size: 240px;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <body>
 
-</body>
+            <div id="div1" class="fa"></div>
+
+            <script>
+                function chargebattery() {
+                    var a;
+                    a = document.getElementById("div1");
+                    a.innerHTML = "&#xf244;";
+                    setTimeout(function () {
+                        a.innerHTML = "&#xf243;";
+                    }, 1000);
+                    setTimeout(function () {
+                        a.innerHTML = "&#xf242;";
+                    }, 2000);
+                    setTimeout(function () {
+                        a.innerHTML = "&#xf241;";
+                    }, 3000);
+                    setTimeout(function () {
+                        a.innerHTML = "&#xf240;";
+                    }, 4000);
+                }
+                chargebattery();
+                setInterval(chargebattery, 5000);
+            </script>
+    </div>
+    <div id="box10">
+        <h1>เทคนิคที่ 10</h1>
+        <h2>ตัวอักษรวิ่ง</h2>
+        <button onclick="typeWriter()">คลิกเพื่อแสดง</button>
+
+        <p id="demo"></p>
+
+        <script>
+            var i = 0;
+            var txt = `JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+    ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.`;
+            var speed = 50;
+
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+        </script>
+    </div>
+
+    </body>
 
 </html>
